@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Byte Size</title>
-  <link rel="stylesheet" type="text/css" href="./resources/css/stye.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Url Shortener</title>
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <header>
-    <img src="./resources/img/bytesize_logo.svg" class="logo" />
+  <body>
+    <header>
+      <img src="./resources/img/logo.png" class="logo" />
+    </header>
+    <main id="main">
+      <div class="container">
+        <h1>Enter a URL</h1>
 
-  </header>
-  <main id="main">
-    <div class="container">
+        <form id="form" autocomplete="off">
+          <input type="text" id="input" value="" />
+          <button id="shorten">Shorten</button>
+        </form>
 
-      <h1>Enter a URL</h1>
-
-      <form id="form" autocomplete="off">
-        <input type="text" id="input" value="">
-        <button id="shorten">Shorten</button>
-      </form>
-
-      <div id="responseField">
-
+        <div id="responseField"></div>
       </div>
-
-    </div>
-  </main>
-  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-  <script src="./resources/js/index.js"></script>
-  <script src="./resources/js/helperFunctions.js"></script>
-</body>
+    </main>
+    <footer>
+      <div class="copyright">
+        &copy;
+        <a href="https://derickmakuto.tech/" target="_blank" class="link"
+          ><p>2020 Simiyu Derick Makuto.</p></a
+        >
+        <p>Powered by</p>
+        <a href="https://www.rebrandly.com/" target="_blank" class="link"
+          >Rebrandly.com</a
+        >.
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="./resources/js/index.js"></script>
+    <script src="./resources/js/helperFunctions.js"></script>
+  </body>
 </html>
